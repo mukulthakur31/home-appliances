@@ -1,0 +1,36 @@
+.container{
+    height: fit-content;
+    background-color: rgb(27, 26, 26);
+    color: beige;
+}
+.top-headings{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 2rem;
+    font-family: 'Bitter', serif;
+}
+.top-headings img{
+    height: 3rem;
+    margin-right: 1rem;
+}
+hr{
+    color: beige;
+}
+.nav-container{
+    display: flex;
+    color: beige;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+
+}
+
+a{
+    padding-left: 3rem;
+    padding-right: 3rem; 
+    font-family: 'Bitter', serif;
+}
+a:hover{
+    color: rgb(93, 100, 98);
+   
+}

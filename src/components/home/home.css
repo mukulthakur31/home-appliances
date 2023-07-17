@@ -1,0 +1,26 @@
+
+
+.home-container img{
+    height: 30rem;
+    aspect-ratio: 1/1;
+    position: relative;
+    left: 40rem;
+}
+.modify1{
+    font-family: 'Bitter', serif;
+    position: relative;
+    top: 20rem;
+    left: 10rem;
+    
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: black;
+
+}
+.h-container{
+     height: 100%; 
+
+}
+.home-container{
+   padding-bottom: 2rem;
+}
