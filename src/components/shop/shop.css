@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    height: 100%;
+    margin-top: 3rem;
+    position: relative;
+  
+    
+}
+
+/* yha  pr ye  background iske parent ki respect me set hota ha to hme ise lgan ke lie position deni pdti ha to is class ka parent tha sectionto hme us section ki position deni hogi agr hm position nhi denge to  by default uska parent to body ha to jb hm shop-container ko back. denge to wo uske parent ke e=respect me lgega or uska parent section ha or hmne section ko position nhi di higi to wo bhi by default body ke rspect me move krega to wo back. body ke respect me lgega to islie hm section ko position relative denge taki wo apne hi respect me move kre or uske baad container ko  position absolute denge taki wo section ke repect me move kre  */
+.shop-container::before{
+    content: "";
+    background-color: rgb(79, 134, 134);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    z-index: -1;
+
+
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    z-index: 1;
+    
+}
+.image{
+    height: 26rem;
+    aspect-ratio: 1/1;
+}
+.product{
+    padding: 1rem;
+}
+.text{
+  text-align: center;
+}

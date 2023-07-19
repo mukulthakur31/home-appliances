@@ -1,7 +1,8 @@
 import './App.css';
 import Nav from './components/navbar/Nav'
 import Home from './components/home/Home'
-import Main from './components/Main/Main'
+import Shop from './components/shop/Shop'
+
 
 
 
@@ -11,7 +12,8 @@ function App() {
       <helo/>
       <Nav/>
       <Home/>
-      <Main/>
+      <Shop/>
+     
     </div>
   );
 }

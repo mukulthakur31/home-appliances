@@ -12,7 +12,7 @@ const Nav = () => {
         <hr />      
         <nav className='nav-container'>
                <a href="#home">Home</a>
-              <a href="#main">Main</a>
+              <a href="#shop">Shop</a>
               <a href="#benches">Benches</a>
               <a href="#blogs">Blogs</a>
               <a href="#register">Register</a>
