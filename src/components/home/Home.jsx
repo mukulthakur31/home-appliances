@@ -4,7 +4,6 @@ import IMG2 from '../../assets/img2.jpg'
 import IMG3 from '../../assets/image3.jpg'
 import './home.css'
 import {Pagination} from 'swiper/modules';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -15,21 +14,22 @@ import 'swiper/css/pagination';
 const data=[
   {
     image:IMG1,
-    heading:'Handmade Kitchen stools'
+    heading:'Handmade Kitchen Stools'
   },
   {
     image:IMG2,
-    heading:'Kids sleeper bed'
+    heading:'Kids Seeper Bed'
   },
   {
     image:IMG3,
-    heading:'Large dining table '
+    heading:'Large Dining Table '
   }
 ]
 const Home = () => {
   return (
+       <header>
       <div id='home' className='h-container'>
-   <Swiper 
+   <Swiper className='high'
    modules={[Pagination]}
       spaceBetween={30}
       slidesPerView={1}
@@ -39,12 +39,15 @@ const Home = () => {
     {
       data.map(({image,heading},index) =>{
         return(
-          <SwiperSlide key={index} className='home-container'>
+          <SwiperSlide key={index} className='width-c' >
+            <div className='home-container'>
             <div className='modify1'>
               <h1 >{heading}</h1>
+              <button className='btn'>Shop now</button>
               </div>
               <div>
               <img src={image}/>
+              </div>
               </div>
           </SwiperSlide>
         )
@@ -52,6 +55,7 @@ const Home = () => {
     }
    </Swiper>
    </div>
+   </header>
   )
 }
 

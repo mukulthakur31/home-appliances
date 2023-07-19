@@ -6,7 +6,7 @@
 .top-headings{
     display: flex;
     justify-content: center;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
     font-family: 'Bitter', serif;
 }
 .top-headings img{
@@ -31,6 +31,6 @@ a{
     font-family: 'Bitter', serif;
 }
 a:hover{
-    color: rgb(93, 100, 98);
+    color: rgb(171, 185, 181);
    
 }
