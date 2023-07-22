@@ -4,8 +4,9 @@ import IMG1 from '../../assets/chair1.jpg'
 import IMG2 from '../../assets/bed1.jpg'
 import IMG3 from '../../assets/chair2.jpeg'
 import IMG4 from '../../assets/table1.jpeg'
-import IMG5 from '../../assets/stool1.jpeg'
+import IMG5 from '../../assets/stool1.jpg'
 import IMG6 from '../../assets/bed2.jpeg'
+
 const data=[
     {
         img:IMG1,
@@ -53,10 +54,12 @@ const Shop = () => {
                 <div className="product">
                  <img className='image' src={img}/>
                  <div className="info">
-                    <p>{text}</p>
-                    <span>{rating}</span>
+                    <p className='text1'>{text}</p>
+                    <span className='stars'>{rating}</span>
                  </div>
-                 <button className='btn'>Shop now</button>
+                 <div className="shop-icon">
+                 <button className='btn' >Shop now</button>
+                 </div>
                 </div>
                 )
             })

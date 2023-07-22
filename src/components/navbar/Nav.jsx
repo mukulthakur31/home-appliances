@@ -1,6 +1,7 @@
 import React from 'react'
 import Top from '../../assets/topheading.jpg'
 import './nav.css'
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 const Nav = () => {
   return (
@@ -11,12 +12,15 @@ const Nav = () => {
     </div>
         <hr />      
         <nav className='nav-container'>
-               <a href="#home">Home</a>
-              <a href="#shop">Shop</a>
-              <a href="#benches">Benches</a>
-              <a href="#blogs">Blogs</a>
-              <a href="#register">Register</a>
+               <a className="links" href="#home">Home</a>
+              <a className="links" href="#shop">Shop</a>
+              <a className="links" href="#blogs">Blogs</a>
+              <a className="links" href="#register">Register</a>
         </nav>
+        <div className="toggle_btn">
+          <div className="bar">
+          </div>
+        </div>
     </div>
   )
 }

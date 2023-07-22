@@ -12,8 +12,7 @@ function App() {
       <helo/>
       <Nav/>
       <Home/>
-      <Shop/>
-     
+      <Shop/> 
     </div>
   );
 }
